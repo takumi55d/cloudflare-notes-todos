@@ -1,0 +1,24 @@
+name = "nextjs-cloudflare-notes"
+compatibility_date = "2024-01-15"
+
+[env.production]
+name = "nextjs-cloudflare-notes"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "notes-db"
+database_id = "your-database-id-here"
+
+[env.local]
+name = "nextjs-cloudflare-notes-local"
+
+[[env.local.d1_databases]]
+binding = "DB"
+database_name = "notes-db"
+database_id = "local-db-id"
+
+# Development configuration
+[[d1_databases]]
+binding = "DB"
+database_name = "notes-db"
+database_id = "local-database-id"
